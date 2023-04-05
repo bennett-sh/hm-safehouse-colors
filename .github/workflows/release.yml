@@ -110,7 +110,7 @@ jobs:
             - name: Build Custom Color Tool
               run: |
                 cd custom-color
-                cargo build --release --target stable-x86_64-pc-windows-msvc
+                cargo build --release --target x86_64-pc-windows-msvc
                 mv target/release/custom-color.exe ../custom-color-tool.exe
                 cd ..
 
