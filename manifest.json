@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"id": "BSh.SafehouseColors",
 	"name": "Safehouse Colors",
 	"description": "Spice up your safehouse and make it more personal by changing the accent color!",
