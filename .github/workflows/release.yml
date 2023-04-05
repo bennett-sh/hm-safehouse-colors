@@ -30,14 +30,13 @@ jobs:
                   ref: "main"
                   fetch-depth: 0
 
-            - name: Create package.json
-              run: |
-                  echo "{\"name\": \"smf-mod\",\"version\":\"0.0.0\",\"description\":\"An SMF mod.\",\"private\":true}" > package.json
-
             - name: Set up Node.js
               uses: actions/setup-node@v3
               with:
                   node-version: 18
+
+            - name: Create package.json
+              run: npm init -y
 
             - name: Install semantic release plugin
               run: |
