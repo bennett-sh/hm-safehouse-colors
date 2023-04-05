@@ -20,7 +20,7 @@ jobs:
                 toolchain: stable
                 default: true
                 target: x86_64-pc-windows-msvc
-                components: cargo rustfmt
+                components: cargo
 
             # - name: Make target default
             #   run: rustup default stable-x86_64-pc-windows-msvc
