@@ -75,7 +75,7 @@
 			"type": "select",
 			"group": "Color",
 			"contentFolders": ["custom"],
-			"tooltip": "Use a custom color. Open the mod folder, run \"Custom Color.exe\" and enter your desired color to change it."
+			"tooltip": "Use a custom color. Visit the Nexus page to see how."
 		}
 	],
 	"updateCheck": "https://github.com/bennett-sh/hm-safehouse-colors/releases/latest/download/updates.json"
