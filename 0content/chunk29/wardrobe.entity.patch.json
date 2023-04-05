@@ -1,19 +1,15 @@
 {
-  "tempHash": "00CC13E86A81E1F2",
-  "tbluHash": "00002619182ECAB7",
-  "patch": [
-    {
-      "SubEntityOperation": [
-        "6d610e547957bc87",
-        {
-          "AddInputCopyConnection": [
-            "DiffuseColor",
-            "DiffuseColor",
-            "31fa87f98c915587"
-          ]
-        }
-      ]
-    }
-  ],
-  "patchVersion": 6
+	"tempHash": "00CC13E86A81E1F2",
+	"tbluHash": "00002619182ECAB7",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"6d610e547957bc87",
+				{
+					"AddInputCopyConnection": ["DiffuseColor", "DiffuseColor", "31fa87f98c915587"]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
 }
