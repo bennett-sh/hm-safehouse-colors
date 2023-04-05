@@ -10,21 +10,10 @@ on:
 
 jobs:
     build:
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
         if: "!startsWith(github.ref, 'refs/tags/')"
 
         steps:
-            - name: Setup Rust
-              uses: actions-rs/toolchain@v1
-              with:
-                toolchain: stable
-                default: true
-                target: x86_64-pc-windows-msvc
-                components: cargo
-
-            - name: Setup MSVC
-              uses: TheMrMilchmann/setup-msvc-dev@v2
-
             - uses: actions/checkout@v2
               with:
                   ref: "main"
@@ -108,13 +97,6 @@ jobs:
                   default_author: github_actions
                   message: "chore: mod update"
                   tag: ${{ steps.newVersion.outputs.new-release-version }}
-
-            - name: Build Custom Color Tool
-              run: |
-                cd custom-color
-                cargo build --release --target x86_64-pc-windows-msvc
-                mv target/release/custom-color.exe ../custom-color-tool.exe
-                cd ..
 
             - name: Generate changelog
               if: ${{ steps.newVersion.outputs.new-release-version }}
