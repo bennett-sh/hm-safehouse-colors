@@ -15,15 +15,15 @@ jobs:
 
         steps:
             - name: Setup Rust
-              uses: ATiltedTree/setup-rust@v1
+              uses: actions-rs/toolchain@v1
               with:
-                rust-version: stable
-                components: cargo
+                toolchain: stable
+                default: true
+                target: x86_64-pc-windows-msvc
+                components: cargo rustfmt
 
-            - name: Add Rust target
-              run: |
-                rustup target add x86_64-pc-windows-msvc
-                rustup default stable-x86_64-pc-windows-msvc
+            # - name: Make target default
+            #   run: rustup default stable-x86_64-pc-windows-msvc
 
             - uses: actions/checkout@v2
               with:
