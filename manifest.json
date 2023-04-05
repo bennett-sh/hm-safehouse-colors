@@ -1,9 +1,99 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Incredible Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.15.1"
+	"id": "BSh.SafehouseColors",
+	"name": "Safehouse Colors",
+	"description": "Spice up your safehouse and make it more personal by changing the accent color!",
+	"authors": ["BSh"],
+	"frameworkVersion": "2.20.0",
+	"contentFolders": [
+		"0content"
+	],
+	"options": [
+		{
+			"name": "Random",
+			"type": "select",
+			"tooltip": "Randomly changes the color on each load.",
+			"enabledByDefault": true,
+			"group": "Color",
+			"contentFolders": [
+				"random"
+			],
+			"dependencies": [
+				{
+					"runtimeID": "0029F334D284BAD8",
+					"toChunk": 29
+				}
+			]
+		},
+		{
+			"name": "Party",
+			"type": "select",
+			"group": "Color",
+			"tooltip": "!SEIZURE WARNING!\nRandomizes the color every 100ms.",
+			"contentFolders": [
+				"party"
+			],
+			"dependencies": [
+				{
+					"runtimeID": "0029F334D284BAD8",
+					"toChunk": 29
+				}
+			]
+		},
+		{
+			"name": "Basic White",
+			"type": "select",
+			"group": "Color",
+			"contentFolders": [
+				"colors/basic-white"
+			],
+			"image": "images/basic-white.png"
+		},
+		{
+			"name": "Vibrant Purple",
+			"type": "select",
+			"group": "Color",
+			"contentFolders": [
+				"colors/vibrant-purple"
+			],
+			"image": "images/vibrant-purple.png"
+		},
+		{
+			"name": "Pure Red",
+			"type": "select",
+			"group": "Color",
+			"contentFolders": [
+				"colors/pure-red"
+			],
+			"image": "images/pure-red.png"
+		},
+		{
+			"name": "Poison Green",
+			"type": "select",
+			"group": "Color",
+			"contentFolders": [
+				"colors/poison-green"
+			],
+			"image": "images/poison-green.png"
+		},
+		{
+			"name": "Citron Yellow",
+			"type": "select",
+			"group": "Color",
+			"contentFolders": [
+				"colors/citron-yellow"
+			],
+			"image": "images/citron-yellow.png"
+		},
+		{
+			"name": "Custom Color",
+			"type": "select",
+			"group": "Color",
+			"contentFolders": [
+				"custom"
+			],
+			"tooltip": "Use a custom color. Open the mod folder, run \"Custom Color.exe\" and enter your desired color to change it."
+		}
+	]
 }

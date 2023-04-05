@@ -1,0 +1,78 @@
+{
+  "tempHash": "00A9B93A825F5BDC",
+  "tbluHash": "005BA5CA6AC00627",
+  "patch": [
+    {
+      "AddEntity": [
+        "feed54e3d53c8b9f",
+        {
+          "parent": "feed7ea896cbfaab",
+          "name": "Random Color",
+          "factory": "[modules:/zrandomcolorentity.class].pc_entitytype",
+          "blueprint": "[modules:/zrandomcolorentity.class].pc_entityblueprint",
+          "properties": {
+            "m_MinColor": { "type": "SColorRGB", "value": "#555555" },
+            "m_MaxColor": { "type": "SColorRGB", "value": "#eeeeee" }
+          },
+          "events": {
+            "Value": {
+              "SetColor": ["feedce6b34f51807"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "feede922c3c50488",
+        {
+          "parent": "feed7ea896cbfaab",
+          "name": "Timer",
+          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Delay time (ms)": {
+              "type": "int32",
+              "value": 100
+            }
+          },
+          "events": {
+            "Out": {
+              "Rand": ["feed54e3d53c8b9f"],
+              "In": ["feede922c3c50488"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "feede6c1e3c5fba8",
+        {
+          "parent": "feed7ea896cbfaab",
+          "name": "Game Event Listener",
+          "factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+          "blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+          "events": { "EventOccurred": { "Signal": ["feedfc9f2a01dbf3"] } }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "feedfc9f2a01dbf3",
+        {
+          "parent": "feed7ea896cbfaab",
+          "name": "Signal Once",
+          "factory": "[modules:/zvoidsignalonceentity.class].pc_entitytype",
+          "blueprint": "[modules:/zvoidsignalonceentity.class].pc_entityblueprint",
+          "properties": {
+            "m_fExpireInterval": { "type": "float32", "value": 5 },
+            "m_bSignaling": { "type": "bool", "value": true }
+          },
+          "events": { "Out": { "In": ["feede922c3c50488"] } }
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
+}

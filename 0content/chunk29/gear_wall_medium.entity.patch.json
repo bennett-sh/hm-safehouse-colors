@@ -1,0 +1,19 @@
+{
+	"tempHash": "00D4EB1B45AE6E6D",
+	"tbluHash": "005313F19F439C4B",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"28f5fdb14453f44",
+				{ "AddInputCopyConnection": ["DiffuseColor", "DiffuseColor", "7a7be32026334eee"] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"28f5fdb14453f44",
+				{ "AddInputCopyConnection": ["DiffuseColor", "DiffuseColor", "87bd9a9701967514"] }
+			]
+		}
+	],
+	"patchVersion": 6
+}
