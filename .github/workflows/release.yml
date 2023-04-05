@@ -22,9 +22,6 @@ jobs:
                 target: x86_64-pc-windows-msvc
                 components: cargo
 
-            # - name: Make target default
-            #   run: rustup default stable-x86_64-pc-windows-msvc
-
             - uses: actions/checkout@v2
               with:
                   ref: "main"
@@ -71,7 +68,7 @@ jobs:
               run: npx --yes semantic-release --branches main --dry-run
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                
+
             - name: Update Cargo.toml
               if: ${{ steps.newVersion.outputs.new-release-version }}
               uses: ciiiii/toml-editor@1.0.0
@@ -113,7 +110,7 @@ jobs:
             - name: Build Custom Color Tool
               run: |
                 cd custom-color
-                cargo build --release
+                cargo build --release --target stable-x86_64-pc-windows-msvc
                 mv target/release/custom-color.exe ../custom-color-tool.exe
                 cd ..
 
