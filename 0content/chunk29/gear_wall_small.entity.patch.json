@@ -1,32 +1,24 @@
 {
-  "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json",
-  "tempHash": "00562B7BEDD0E451",
-  "tbluHash": "00D0F568E085EC7E",
-  "patch": [
-    {
-      "SubEntityOperation": [
-        "56aa94c35bb4faa3",
-        {
-          "AddEventConnection": [
-            "DiffuseColor",
-            "DiffuseColor",
-            "798618dae03d206f"
-          ]
-        }
-      ]
-    },
-    {
-      "SubEntityOperation": [
-        "56aa94c35bb4faa3",
-        {
-          "AddEventConnection": [
-            "DiffuseColor",
-            "DiffuseColor",
-            "3adbafea67d57e1"
-          ]
-        }
-      ]
-    }
-  ],
-  "patchVersion": 6
+	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json",
+	"tempHash": "00562B7BEDD0E451",
+	"tbluHash": "00D0F568E085EC7E",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"56aa94c35bb4faa3",
+				{
+					"AddEventConnection": ["DiffuseColor", "DiffuseColor", "798618dae03d206f"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"56aa94c35bb4faa3",
+				{
+					"AddEventConnection": ["DiffuseColor", "DiffuseColor", "3adbafea67d57e1"]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
 }

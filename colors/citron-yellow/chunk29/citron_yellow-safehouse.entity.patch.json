@@ -1,78 +1,72 @@
 {
-  "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json",
-  "tempHash": "00A9B93A825F5BDC",
-  "tbluHash": "005BA5CA6AC00627",
-  "patch": [
-    {
-      "AddEntity": [
-        "feed54e3d53c8b9f",
-        {
-          "parent": "feed7ea896cbfaab",
-          "name": "Fixed Safehouse Color",
-          "factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_get.entitytemplate].pc_entitytype",
-          "blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_get.entitytemplate].pc_entityblueprint",
-          "properties": {
-            "m_Value": {
-              "type": "SColorRGB",
-              "value": "#fbff47"
-            }
-          },
-          "events": {
-            "Value": {
-              "SetColor": [
-                "feedce6b34f51807"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "feede922c3c50488",
-        {
-          "parent": "feed7ea896cbfaab",
-          "name": "Game Event Listener",
-          "factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
-          "blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
-          "events": {
-            "EventOccurred": {
-              "Signal": [
-                "feedfc9f2a01dbf3"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "feedfc9f2a01dbf3",
-        {
-          "parent": "feed7ea896cbfaab",
-          "name": "Signal Once",
-          "factory": "[modules:/zvoidsignalonceentity.class].pc_entitytype",
-          "blueprint": "[modules:/zvoidsignalonceentity.class].pc_entityblueprint",
-          "properties": {
-            "m_fExpireInterval": {
-              "type": "float32",
-              "value": 5
-            },
-            "m_bSignaling": {
-              "type": "bool",
-              "value": true
-            }
-          },
-          "events": {
-            "Out": {
-              "Get": [
-                "feed54e3d53c8b9f"
-              ]
-            }
-          }
-        }
-      ]
-    }
-  ],
-  "patchVersion": 6
+	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json",
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"AddEntity": [
+				"feed54e3d53c8b9f",
+				{
+					"parent": "feed7ea896cbfaab",
+					"name": "Fixed Safehouse Color",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_get.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_get.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_Value": {
+							"type": "SColorRGB",
+							"value": "#fbff47"
+						}
+					},
+					"events": {
+						"Value": {
+							"SetColor": ["feedce6b34f51807"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feede922c3c50488",
+				{
+					"parent": "feed7ea896cbfaab",
+					"name": "Game Event Listener",
+					"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+					"events": {
+						"EventOccurred": {
+							"Signal": ["feedfc9f2a01dbf3"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feedfc9f2a01dbf3",
+				{
+					"parent": "feed7ea896cbfaab",
+					"name": "Signal Once",
+					"factory": "[modules:/zvoidsignalonceentity.class].pc_entitytype",
+					"blueprint": "[modules:/zvoidsignalonceentity.class].pc_entityblueprint",
+					"properties": {
+						"m_fExpireInterval": {
+							"type": "float32",
+							"value": 5
+						},
+						"m_bSignaling": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": {
+						"Out": {
+							"Get": ["feed54e3d53c8b9f"]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
 }
