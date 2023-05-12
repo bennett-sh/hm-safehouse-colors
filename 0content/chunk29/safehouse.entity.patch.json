@@ -1,243 +1,319 @@
 {
-	"tempHash": "00A9B93A825F5BDC",
-	"tbluHash": "005BA5CA6AC00627",
-	"patch": [
-		{ "RemoveEntityByID": "4790ae9759587f1c" },
-		{ "RemoveEntityByID": "bab95c9154096e22" },
-		{ "RemoveEntityByID": "16e8d19ce26a4349" },
-		{ "RemoveEntityByID": "391c1b3bf5100d96" },
-		{ "RemoveEntityByID": "d1d5ef8f93d43f2a" },
-		{ "RemoveEntityByID": "c533afcc71b8b04e" },
-		{ "RemoveEntityByID": "bdb46ed31985d2ff" },
-		{ "RemoveEntityByID": "e52dc27e150ca61c" },
-		{ "RemoveEntityByID": "2e73dd30b6833384" },
-		{ "RemoveEntityByID": "a7355538244f5854" },
-		{ "RemoveEntityByID": "ac8689c008b5560e" },
-		{ "RemoveEntityByID": "d6f2db970c73963" },
-		{ "RemoveEntityByID": "deb3ce6b34f51807" },
-		{ "RemoveEntityByID": "26b7072c5899cc1f" },
-		{ "RemoveEntityByID": "9d06ceebe39ca71d" },
-		{ "RemoveEntityByID": "6ee739f2379f21e4" },
-		{
-			"SubEntityOperation": [
-				"5c57b6ed5ac2db44",
-				{
-					"RemoveEventConnection": ["Value", "DiffuseColor", "c77270e373cfdf41"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": ["7594f1913f6d0a46", { "RemoveEventConnection": ["OnFalse", "Get", "6ee739f2379f21e4"] }]
-		},
-		{
-			"SubEntityOperation": ["7594f1913f6d0a46", { "RemoveEventConnection": ["OnFalse", "Get", "deb3ce6b34f51807"] }]
-		},
-		{
-			"SubEntityOperation": ["223cf970c9a9fb99", { "RemoveEventConnection": ["OnFalse", "Get", "e52dc27e150ca61c"] }]
-		},
-		{
-			"SubEntityOperation": ["223cf970c9a9fb99", { "RemoveEventConnection": ["OnTrue", "Get", "2e73dd30b6833384"] }]
-		},
-		{
-			"SubEntityOperation": ["af313a303c96ecd6", { "RemoveEventConnection": ["OnTrue", "Get", "a7355538244f5854"] }]
-		},
-		{
-			"SubEntityOperation": ["af313a303c96ecd6", { "RemoveEventConnection": ["OnFalse", "Get", "9d06ceebe39ca71d"] }]
-		},
-		{
-			"SubEntityOperation": ["7a55a7040367284d", { "RemoveEventConnection": ["OnTrue", "Get", "4790ae9759587f1c"] }]
-		},
-		{
-			"SubEntityOperation": ["7a55a7040367284d", { "RemoveEventConnection": ["OnTrue", "Get", "c533afcc71b8b04e"] }]
-		},
-		{
-			"SubEntityOperation": ["7a55a7040367284d", { "RemoveEventConnection": ["OnFalse", "Get", "391c1b3bf5100d96"] }]
-		},
-		{
-			"SubEntityOperation": ["7a55a7040367284d", { "RemoveEventConnection": ["OnFalse", "Get", "d1d5ef8f93d43f2a"] }]
-		},
-		{
-			"SubEntityOperation": [
-				"d0a3198e4dba7cbf",
-				{
-					"RemoveEventConnection": ["Value", "DiffuseColor", "f80de27ceb33b481"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": ["3e77f924b30b8e68", { "RemoveAllEventConnectionsForEvent": "OnTrue" }]
-		},
-		{
-			"SubEntityOperation": ["fdbbae5b3a261b8", { "RemoveAllEventConnectionsForEvent": "Value" }]
-		},
-		{
-			"SubEntityOperation": ["3e77f924b30b8e68", { "RemoveAllEventConnectionsForEvent": "OnFalse" }]
-		},
-		{
-			"SubEntityOperation": ["9d861b171399d547", { "RemoveAllEventConnectionsForEvent": "Value" }]
-		},
-		{
-			"SubEntityOperation": ["1c8a4a4423fc80e2", { "RemoveEventConnection": ["OnFalse", "Get", "26b7072c5899cc1f"] }]
-		},
-		{
-			"AddEntity": [
-				"feed7ea896cbfaab",
-				{
-					"parent": "96018727bcb22aeb",
-					"name": "Safehouse Color",
-					"factory": "[modules:/zentity.class].pc_entitytype",
-					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"feedce6b34f51807",
-				{
-					"parent": "feed7ea896cbfaab",
-					"name": "Light Color",
-					"factory": "[modules:/zentity.class].pc_entitytype",
-					"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-					"inputCopying": {
-						"SetColor": {
-							"DiffuseColor": [
-								"d0982c6e108bca43",
-								"423f385c5f147e24",
-								"bd006d99b469e5cf",
-								"f75d2a0e338e90a5",
-								"5629932f866ca48d",
-								"96973790b225529f",
-								"d70e83cf562039d7",
-								"6cfd1cb77dd91c13",
-								"10252a7b49b63db",
-								"8b0e0cba7a4a2965",
-								"250044fad7462d6b",
-								"a7ae4f0e6e5b64c2",
-								"6fbc77cc592891d6",
-								"f09f99df423d1aa1",
-								"bf064d5a568d3c4a",
-								"7fccf9831b7ca24f",
-								"806dba7e099e856",
-								"65da0627e673e02b",
-								"8a746421e2fe56a0",
-								"fe82bb8867ede51",
-								"efb3fc453938db81",
-								"c77270e373cfdf41",
-								"566d7a85176426ad",
-								"a4b22b870a8c681",
-								"af663734e6081f5a",
-								"8e72e2e052e27287",
-								"a91c5c01d2be9a53",
-								"51a57153f13d51cc",
-								"1727fbfd5f7e7802",
-								"b200ae446bd7dd48",
-								"d0982c6e108bca43",
-								"3a2b9f2806ddaed",
-								"5cd9aa243cb38e8f",
-								"a0f7c80c65fa3f95",
-								"fd62f39f5993bd21",
-								"9d94b32be9b1a531",
-								"87b77acf25c2c128",
-								"6a07ffa2a1edaf14",
-								"bc0f37937037c890",
-								"3106e35e500bfe51",
-								"9218c0f6c5aa7702",
-								"2ef9c27d85112a6",
-								"fcfe61a7e2f6b625",
-								"ffaf50165f77b35",
-								"8eeac61ca2923c55",
-								"f80de27ceb33b481",
-								"a60c6bce138078a9",
-								"97c428dc3b35927",
-								"f9ac0f727318638b",
-								"8403c2db17ea6e6a",
-								"6d9d73b49dac0d71",
-								"9a717a260a483134",
-								"49a079aa48f624eb",
-								"19e80d5cd63c4427",
-								"cbfb9d66343101fa",
-								"58b2dcc8a2c22608",
-								"616636e10fa27b27",
-								"89af8ee7ca127745",
-								"1ee00b9e827c2f74",
-								"87015e9919005548",
-								"bfd56a8ceb079234",
-								"65619c00907639bd",
-								"74427409281d5fed",
-								"fb1f7c53a98283ff",
-								"9d59c58d4b2ebdfe",
-								"a1b8e955069a308f",
-								"8c08ebc829db4965",
-								"902e502ac526a8ec",
-								"8a94adfc60a343f7",
-								"1435e1d537e629bb",
-								"8d60f2d2fc0433b3",
-								"d5d29f67542f0a75",
-								"2dc3c5e36afbc044",
-								"7c15000432a09d7a",
-								"34139bde9c325d0f",
-								"ab31ae995724781e",
-								"7efeec759fd1d881",
-								"6d14270c2f610f5f",
-								"b35f9ac913fbc351",
-								"da0ed8b18486af6",
-								"3a73cb280f0c2c01",
-								"c0f09b6627976070",
-								"4ad6c0c975a37f19",
-								"333bcf6df7afc528",
-								"ebf1442cbe9f94ee",
-								"894c8fafedb63234",
-								"a6e203e7a8dcc93f",
-								"cf9f679bcc112b30",
-								"906e391e89598499",
-								"12746353096d7d85",
-								"9ca979ab0e2d8359",
-								"c45342017e49bd15",
-								"8542e6dcf56c85e2",
-								"e38f31b24f4b26ac",
-								"38cc803084c1afed",
-								"e43fd0ffd01522ef",
-								"ae57086fc44f8686",
-								"c081469ee50ae800",
-								"7f7d6951dd29f6d8",
-								"37f044cc80550d6d",
-								"e2e4da527d4ee920"
-							],
-							"InColor": [
-								"2e043c016a077718",
-								"d55974d32673f824",
-								"12f4c8bb5e5c4f94",
-								"e6b688771e5de909",
-								"563d7365fd2e8285",
-								"cebe5589bc59fe76",
-								"a29294383c155449",
-								"22536f0d73c8eb7f",
-								"ff855da61f9605b7",
-								"ed98c4354e4e3054",
-								"d908d893c9dd539c",
-								"69aba6589ccf9da6",
-								"eef5177bc7ae1030",
-								"52d073d68e684c03",
-								"d732aa1c2aff4192",
-								"b265bde99698d3af",
-								"8b94734b0e232353",
-								"f75c78145f207754",
-								"fb65f841e346049b",
-								"d28e032460c8b62c",
-								"4417383a62bf1e40",
-								"65a8a8e98ccfe31",
-								"2d15aca3ecae8f8d",
-								"a879583598138d42",
-								"b26f8cd4f829001a",
-								"91dcadf50bb05808",
-								"c25c05134b73ac48"
-							],
-							"ConstantColorRGB_02_Value": ["fcfe61a7e2f6b625"]
-						}
-					}
-				}
-			]
-		}
-	],
-	"patchVersion": 6
+  "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json",
+  "tempHash": "00A9B93A825F5BDC",
+  "tbluHash": "005BA5CA6AC00627",
+  "patch": [
+    {
+      "RemoveEntityByID": "4790ae9759587f1c"
+    },
+    {
+      "RemoveEntityByID": "bab95c9154096e22"
+    },
+    {
+      "RemoveEntityByID": "16e8d19ce26a4349"
+    },
+    {
+      "RemoveEntityByID": "391c1b3bf5100d96"
+    },
+    {
+      "RemoveEntityByID": "d1d5ef8f93d43f2a"
+    },
+    {
+      "RemoveEntityByID": "c533afcc71b8b04e"
+    },
+
+    {
+      "RemoveEntityByID": "bdb46ed31985d2ff"
+    },
+    {
+      "RemoveEntityByID": "e52dc27e150ca61c"
+    },
+    {
+      "RemoveEntityByID": "2e73dd30b6833384"
+    },
+    {
+      "RemoveEntityByID": "a7355538244f5854"
+    },
+    {
+      "RemoveEntityByID": "ac8689c008b5560e"
+    },
+    {
+      "RemoveEntityByID": "d6f2db970c73963"
+    },
+    {
+      "RemoveEntityByID": "26b7072c5899cc1f"
+    },
+
+    {
+      "RemoveEntityByID": "9d06ceebe39ca71d"
+    },
+    {
+      "RemoveEntityByID": "6ee739f2379f21e4"
+    },
+    {
+      "RemoveEntityByID": "e908d6cf0e6bcfb2"
+    },
+    {
+      "RemoveEntityByID": "b8ae7ca5f3c278f"
+    },
+    {
+      "RemoveEntityByID": "deb3ce6b34f51807"
+    },
+    {
+      "SubEntityOperation": [
+        "7594f1913f6d0a46",
+        {
+          "RemoveAllEventConnectionsForTrigger": ["OnTrue", "Get"]
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "7594f1913f6d0a46",
+        {
+          "RemoveAllEventConnectionsForTrigger": ["OnFalse", "Get"]
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "223cf970c9a9fb99",
+        {
+          "RemoveEventConnection": ["OnFalse", "Get", "e52dc27e150ca61c"]
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "223cf970c9a9fb99",
+        {
+          "RemoveEventConnection": ["OnTrue", "Get", "2e73dd30b6833384"]
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "af313a303c96ecd6",
+        {
+          "RemoveEventConnection": ["OnTrue", "Get", "a7355538244f5854"]
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "af313a303c96ecd6",
+        {
+          "RemoveEventConnection": ["OnFalse", "Get", "9d06ceebe39ca71d"]
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "7a55a7040367284d",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnTrue"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "7a55a7040367284d",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnFalse"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "d0a3198e4dba7cbf",
+        {
+          "RemoveAllEventConnectionsForEvent": "Value"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "3e77f924b30b8e68",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnTrue"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "fdbbae5b3a261b8",
+        {
+          "RemoveAllEventConnectionsForEvent": "Value"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "3e77f924b30b8e68",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnFalse"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "9d861b171399d547",
+        {
+          "RemoveAllEventConnectionsForEvent": "Value"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "1c8a4a4423fc80e2",
+        {
+          "RemoveEventConnection": ["OnFalse", "Get", "26b7072c5899cc1f"]
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "feed7ea896cbfaab",
+        {
+          "parent": "96018727bcb22aeb",
+          "name": "Safehouse Color",
+          "factory": "[modules:/zentity.class].pc_entitytype",
+          "blueprint": "[modules:/zentity.class].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "feedce6b34f51807",
+        {
+          "parent": "feed7ea896cbfaab",
+          "name": "Light Color",
+          "factory": "[modules:/zentity.class].pc_entitytype",
+          "blueprint": "[modules:/zentity.class].pc_entityblueprint",
+          "inputCopying": {
+            "SetColor": {
+              "DiffuseColor": [
+                "7fccf9831b7ca24f",
+                "806dba7e099e856",
+                "65da0627e673e02b",
+                "8a746421e2fe56a0",
+                "fe82bb8867ede51",
+                "efb3fc453938db81",
+                "c77270e373cfdf41",
+                "566d7a85176426ad",
+                "a4b22b870a8c681",
+                "af663734e6081f5a",
+                "250044fad7462d6b",
+                "a7ae4f0e6e5b64c2",
+                "6fbc77cc592891d6",
+                "f09f99df423d1aa1",
+                "bf064d5a568d3c4a",
+                "fb1f7c53a98283ff",
+                "9d59c58d4b2ebdfe",
+                "a1b8e955069a308f",
+                "8c08ebc829db4965",
+                "902e502ac526a8ec",
+                "8a94adfc60a343f7",
+                "1435e1d537e629bb",
+                "8d60f2d2fc0433b3",
+                "d5d29f67542f0a75",
+                "2dc3c5e36afbc044",
+                "7c15000432a09d7a",
+                "34139bde9c325d0f",
+                "ab31ae995724781e",
+                "7efeec759fd1d881",
+                "da0ed8b18486af6",
+                "3a73cb280f0c2c01",
+                "c0f09b6627976070",
+                "4ad6c0c975a37f19",
+                "333bcf6df7afc528",
+                "ebf1442cbe9f94ee",
+                "894c8fafedb63234",
+                "a6e203e7a8dcc93f",
+                "cf9f679bcc112b30",
+                "906e391e89598499",
+                "12746353096d7d85",
+                "c45342017e49bd15",
+                "e38f31b24f4b26ac",
+                "e43fd0ffd01522ef",
+                "ae57086fc44f8686",
+                "c081469ee50ae800",
+                "7f7d6951dd29f6d8",
+                "37f044cc80550d6d",
+                "e2e4da527d4ee920",
+                "5629932f866ca48d",
+                "96973790b225529f",
+                "d70e83cf562039d7",
+                "6cfd1cb77dd91c13",
+                "10252a7b49b63db",
+                "8b0e0cba7a4a2965",
+                "8e72e2e052e27287",
+                "a91c5c01d2be9a53",
+                "51a57153f13d51cc",
+                "1727fbfd5f7e7802",
+                "b200ae446bd7dd48",
+                "d0982c6e108bca43",
+                "3a2b9f2806ddaed",
+                "5cd9aa243cb38e8f",
+                "a0f7c80c65fa3f95",
+                "bd006d99b469e5cf",
+                "f75d2a0e338e90a5",
+                "fd62f39f5993bd21",
+                "9d94b32be9b1a531",
+                "87b77acf25c2c128",
+                "6a07ffa2a1edaf14",
+                "bc0f37937037c890",
+                "423f385c5f147e24",
+                "2ef9c27d85112a6",
+                "fcfe61a7e2f6b625",
+                "ffaf50165f77b35",
+                "8eeac61ca2923c55",
+                "f80de27ceb33b481",
+                "a60c6bce138078a9",
+                "6d9d73b49dac0d71",
+                "9a717a260a483134",
+                "49a079aa48f624eb",
+                "19e80d5cd63c4427",
+                "cbfb9d66343101fa",
+                "89af8ee7ca127745",
+                "3106e35e500bfe51",
+                "9218c0f6c5aa7702"
+              ],
+              "InColor": [
+                "2e043c016a077718",
+                "d55974d32673f824",
+                "12f4c8bb5e5c4f94",
+                "e6b688771e5de909",
+                "563d7365fd2e8285",
+                "cebe5589bc59fe76",
+                "a29294383c155449",
+                "22536f0d73c8eb7f",
+                "ff855da61f9605b7",
+                "ed98c4354e4e3054",
+                "d908d893c9dd539c",
+                "69aba6589ccf9da6",
+                "eef5177bc7ae1030",
+                "52d073d68e684c03",
+                "d732aa1c2aff4192",
+                "b265bde99698d3af",
+                "8b94734b0e232353",
+                "f75c78145f207754",
+                "fb65f841e346049b",
+                "d28e032460c8b62c",
+                "4417383a62bf1e40",
+                "65a8a8e98ccfe31",
+                "2d15aca3ecae8f8d",
+                "a879583598138d42",
+                "b26f8cd4f829001a",
+                "91dcadf50bb05808",
+                "c25c05134b73ac48"
+              ],
+              "ConstantColorRGB_02_Value": ["fcfe61a7e2f6b625"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
 }

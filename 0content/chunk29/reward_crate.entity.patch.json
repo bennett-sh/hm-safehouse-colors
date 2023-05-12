@@ -1,16 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json",
-  "tempHash": "00CC13E86A81E1F2",
-  "tbluHash": "00002619182ECAB7",
+  "tempHash": "00B917F348CF904D",
+  "tbluHash": "00B08A36F5AF5C5B",
   "patch": [
     {
       "SubEntityOperation": [
-        "6d610e547957bc87",
+        "9dde82f05bf7ef8",
         {
-          "AddInputCopyConnection": [
+          "AddEventConnection": [
             "DiffuseColor",
             "DiffuseColor",
-            "31fa87f98c915587"
+            "629bb83f1c0bd5f9"
           ]
         }
       ]
