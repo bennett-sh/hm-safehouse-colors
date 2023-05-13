@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json",
+  "tempHash": "005C12F3B46B2383",
+  "tbluHash": "00929908B165E091",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "3e56b9d4a46ab5df",
+        {
+          "RemovePropertyAlias": "m_bRemovePhysics"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "3e56b9d4a46ab5df",
+        {
+          "RemovePropertyAlias": "Diff_Albedo_Value"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "3e56b9d4a46ab5df",
+        {
+          "RemovePropertyAlias": "ConstantVector1D_08_Value"
+        }
+      ]
+    },
+    {
+      "RemoveEntityByID": "853f7bb3985ba457"
+    },
+    {
+      "RemoveEntityByID": "cc45e7db799f26b4"
+    }
+  ],
+  "patchVersion": 6
+}
